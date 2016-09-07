@@ -14,7 +14,7 @@ myApp.config(['$routeProvider', function ($routeProvider) {
     })
     .when('/addBeans', {
       templateUrl: 'views/templates/addBeans.html',
-      controller: 'BeanController',
+      controller: 'AddBeansController',
     })
     .otherwise({
       redirectTo: '/brew',
