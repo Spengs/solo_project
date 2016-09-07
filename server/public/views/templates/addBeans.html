@@ -1,0 +1,26 @@
+<h2>Add Beans</h2>
+
+<form>
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="coffeeName" ng-model="newCoffee.name" />
+
+  <label for="origin">Origin:</label>
+  <input type="text" origin="origin" id="coffeeOrigin" ng-model="newCoffee.origin" />
+
+  <label for="roast">Roast:</label>
+  <input type="text" roast="roast" id="coffeeRoast" ng-model="newCoffee.roast" />
+
+  <label for="flavor">Tasting Notes:</label>
+  <input type="text" flavor="flavor" id="coffeeFlavor" ng-model="newCoffee.flavor" />
+
+  <label for="body">Body:</label>
+  <input type="text" body="body" id="coffeeBody" ng-model="newCoffee.body" />
+
+  <label for="acidity">Acidity:</label>
+  <input type="text" acidity="acidity" id="coffeeAcidity" ng-model="newCoffee.acidity" />
+
+  <label for="price">Price:</label>
+  <input type="text" price="price" id="coffeePrice" ng-model="newCoffee.price" />
+</form>
+
+<button ng-click="submitCoffee()">Submit</button>
