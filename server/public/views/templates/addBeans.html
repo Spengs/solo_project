@@ -5,22 +5,95 @@
   <input type="text" name="name" id="coffeeName" ng-model="newCoffee.name" />
 
   <label for="origin">Origin:</label>
-  <input type="text" origin="origin" id="coffeeOrigin" ng-model="newCoffee.origin" />
+  <input type="text" name="origin" id="coffeeOrigin" ng-model="newCoffee.origin" />
 
   <label for="roast">Roast:</label>
-  <input type="text" roast="roast" id="coffeeRoast" ng-model="newCoffee.roast" />
+  <input type="text" name="roast" id="coffeeRoast" ng-model="newCoffee.roast" />
 
   <label for="flavor">Tasting Notes:</label>
-  <input type="text" flavor="flavor" id="coffeeFlavor" ng-model="newCoffee.flavor" />
+  <input type="text" name="flavor" id="coffeeFlavor" ng-model="newCoffee.flavor" />
 
   <label for="body">Body:</label>
-  <input type="text" body="body" id="coffeeBody" ng-model="newCoffee.body" />
+  <input type="text" name="body" id="coffeeBody" ng-model="newCoffee.body" />
 
   <label for="acidity">Acidity:</label>
-  <input type="text" acidity="acidity" id="coffeeAcidity" ng-model="newCoffee.acidity" />
+  <input type="text" name="acidity" id="coffeeAcidity" ng-model="newCoffee.acidity" />
 
   <label for="price">Price:</label>
-  <input type="text" price="price" id="coffeePrice" ng-model="newCoffee.price" />
+  <input type="text" name="price" id="coffeePrice" ng-model="newCoffee.price" />
+
+  <div>
+    <h2>Chemex</h2>
+    <label for="chemexDose">Dose:</label>
+    <input type="text" name="chemexDose" id="chemexDose" ng-model="newCoffee.chemexDose" />
+
+    <label for="chemexGrind">Grind:</label>
+    <input type="text" name="chemexGrind" id="chemexGrind" ng-model="newCoffee.chemexGrind" />
+
+    <label for="chemexBloomWeight">Bloom Weight:</label>
+    <input type="text" name="chemexBloomWeight" id="chemexBloomWeight" ng-model="newCoffee.chemexBloomWeight" />
+
+    <label for="chemexBloomTime">Bloom Time:</label>
+    <input type="text" name="chemexBloomTime" id="chemexBloomTime" ng-model="newCoffee.chemexBloomTime" />
+
+    <label for="chemexEndWeight">End Weight:</label>
+    <input type="text" name="chemexEndWeight" id="chemexEndWeight" ng-model="newCoffee.chemexEndWeight" />
+  </div>
+
+  <div>
+    <h2>Cone</h2>
+    <label for="coneDose">Dose:</label>
+    <input type="text" name="coneDose" id="coneDose" ng-model="newCoffee.coneDose" />
+
+    <label for="coneGrind">Grind:</label>
+    <input type="text" name="coneGrind" id="coneGrind" ng-model="newCoffee.coneGrind" />
+
+    <label for="coneBloomWeight">Bloom Weight:</label>
+    <input type="text" name="coneBloomWeight" id="coneBloomWeight" ng-model="newCoffee.coneBloomWeight" />
+
+    <label for="coneBloomTime">Bloom Time:</label>
+    <input type="text" name="coneBloomTime" id="coneBloomTime" ng-model="newCoffee.coneBloomTime" />
+
+    <label for="coneEndWeight">End Weight:</label>
+    <input type="text" name="coneEndWeight" id="coneEndWeight" ng-model="newCoffee.coneEndWeight" />
+  </div>
+
+  <div>
+    <h2>French Press</h2>
+    <label for="frenchpressDose">Dose:</label>
+    <input type="text" name="frenchpressDose" id="frenchpressDose" ng-model="newCoffee.frenchpressDose" />
+
+    <label for="frenchpressGrind">Grind:</label>
+    <input type="text" name="frenchpressGrind" id="frenchpressGrind" ng-model="newCoffee.frenchpressGrind" />
+
+    <label for="frenchpressBloomWeight">Bloom Weight:</label>
+    <input type="text" name="frenchpressBloomWeight" id="frenchpressBloomWeight" ng-model="newCoffee.frenchpressBloomWeight" />
+
+    <label for="frenchpressBloomTime">Bloom Time:</label>
+    <input type="text" name="frenchpressBloomTime" id="frenchpressBloomTime" ng-model="newCoffee.frenchpressBloomTime" />
+
+    <label for="frenchpressEndWeight">End Weight:</label>
+    <input type="text" name="frenchpressEndWeight" id="frenchpressEndWeight" ng-model="newCoffee.frenchpressEndWeight" />
+  </div>
+
+  <div>
+    <h2>Aeropress</h2>
+    <label for="aeropressDose">Dose:</label>
+    <input type="text" name="aeropressDose" id="aeropressDose" ng-model="newCoffee.aeropressDose" />
+
+    <label for="aeropressGrind">Grind:</label>
+    <input type="text" name="aeropressGrind" id="aeropressGrind" ng-model="newCoffee.aeropressGrind" />
+
+    <label for="aeropressBloomWeight">Bloom Weight:</label>
+    <input type="text" name="aeropressBloomWeight" id="aeropressBloomWeight" ng-model="newCoffee.aeropressBloomWeight" />
+
+    <label for="aeropressBloomTime">Bloom Time:</label>
+    <input type="text" name="aeropressBloomTime" id="aeropressBloomTime" ng-model="newCoffee.aeropressBloomTime" />
+
+    <label for="aeropressEndWeight">End Weight:</label>
+    <input type="text" name="aeropressEndWeight" id="aeropressEndWeight" ng-model="newCoffee.aeropressEndWeight" />
+  </div>
+
 </form>
 
 <button ng-click="submitCoffee()">Submit</button>

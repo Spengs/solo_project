@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.use('/beans', beans);
 /** ---------- MONGOOSE CONNECTION HANDLING ---------- **/
 var databaseUri = 'mongodb://localhost:27017/omicron';
+mongoose.Promise = global.Promise;
 
 mongoose.connect(databaseUri);
 
