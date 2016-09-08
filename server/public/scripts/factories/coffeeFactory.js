@@ -1,3 +1,3 @@
-myApp.factory('CoffeeFactory', [function () {
-  
-}]);
+// myApp.factory('CoffeeFactory', [function () {
+//   console.log('Coffee factory is go');
+// }]);
