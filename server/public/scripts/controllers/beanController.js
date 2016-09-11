@@ -4,11 +4,7 @@ myApp.controller('BeanController', ['$scope', '$http', function ($scope, $http) 
 
 getBeans();
 
-
-
-
-
-
+//maybe this all needs to go in a factory?
 
   function getBeans() {
     $http.get('/beans')
