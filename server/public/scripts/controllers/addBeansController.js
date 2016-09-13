@@ -1,4 +1,4 @@
-myApp.controller('AddBeansController', ['$scope', '$http', function ($scope, $http) {
+myApp.controller('AddBeansController', ['$scope', '$http', 'CoffeeFactory', function ($scope, $http, CoffeeFactory) {
   console.log('addBeans controller works');
 
   $scope.newCoffee = {};

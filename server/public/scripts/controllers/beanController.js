@@ -1,17 +1,13 @@
-myApp.controller('BeanController', ['$scope', '$http', function ($scope, $http) {
+myApp.controller('BeanController', ['$scope', '$uibModal', 'CoffeeFactory', function ($scope, $uibModal, CoffeeFactory) {
   console.log('bean controller works');
-  $scope.beans = [];
+  $scope.coffeeFactory = CoffeeFactory;
+  $scope.coffeeFactory.getResults().then(function () {
+    $scope.beans = $scope.coffeeFactory.getBeans();
 
-getBeans();
+  });
 
-//maybe this all needs to go in a factory?
+  $scope.click = function () {
+    console.log('click works');
+  };
 
-  function getBeans() {
-    $http.get('/beans')
-      .then(function (response) {
-          console.log('GET /beans', response.data);
-          var beansDataArray = response.data;
-          $scope.beans = beansDataArray;
-        });
-  }
 }]);
