@@ -1,4 +1,4 @@
-myApp.controller('BeanController', ['$scope', '$uibModal', 'CoffeeFactory', function ($scope, $uibModal, CoffeeFactory) {
+myApp.controller('BeanController', ['$scope', 'CoffeeFactory', '$modal', function ($scope, CoffeeFactory, $modal) {
   console.log('bean controller works');
   $scope.coffeeFactory = CoffeeFactory;
   $scope.coffeeFactory.getResults().then(function () {
@@ -6,6 +6,7 @@ myApp.controller('BeanController', ['$scope', '$uibModal', 'CoffeeFactory', func
 
   });
 
+  
   $scope.click = function () {
     console.log('click works');
   };

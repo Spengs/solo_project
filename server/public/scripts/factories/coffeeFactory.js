@@ -2,8 +2,6 @@ myApp.factory('CoffeeFactory', ['$http', function ($http) {
   console.log('Coffee factory is go');
 
   var beans = [];
-  
-
 
   var getBeans = function () {
     var promise = $http.get('/beans').then(function (response) {
@@ -11,9 +9,8 @@ myApp.factory('CoffeeFactory', ['$http', function ($http) {
             beans = response.data;
           });
 
-          return promise;
+    return promise;
   };
-
 
   return {
     getBeans: function () {
