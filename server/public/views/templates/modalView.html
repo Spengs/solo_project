@@ -1,16 +1,17 @@
-<script type="text/ng-template" id="modalView.html">
-
 <div class="modal-header">
-  <h3>The Customer Name is: {{ customer.name }}</h3>
+  <h3>{{beans.name}}</h3>
 </div>
 
 <div class="modal-body">
-  This is where the Customer Details Goes<br />
-  {{ customer.details }}
+  Name: {{beans.name}}<br />
+  Origin: {{beans.origin}}<br />
+  Roast: {{beans.roast}}<br />
+  Tasting Notes: {{beans.flavor}}<br />
+  Body: {{beans.body}}<br />
+  Acidity: {{beans.acidity}}<br />
+  Price: {{beans.price}}<br />
 </div>
 
 <div class="modal-footer">
-
+  <button class="btn btn-primary" ng-click="closeModal()">OK</button>
 </div>
-
-</script>
