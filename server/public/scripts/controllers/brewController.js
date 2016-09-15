@@ -4,12 +4,23 @@ function ($scope, CoffeeFactory) {
   $scope.coffeeFactory = CoffeeFactory;
   $scope.coffeeFactory.getResults().then(function () {
     $scope.beans = $scope.coffeeFactory.getBeans();
-    console.log($scope.beans[0]);
+    $scope.brew = {};
+    $scope.brewType = '';
+    $scope.brews = [
+      {type: 'aeropress', display: 'Aeropress'},
+      {type: 'chemex', display: 'Chemex'},
+      {type: 'cone', display: 'Cone'},
+      {type: 'frenchpress', display: 'French Press'},
+    ];
 
     var counter = 0;
     $scope.showStatus = false;
 
-    $scope.showInfo = function () {
+    $scope.drops = function () {
+      console.log($scope.brewType);
+    };
+
+    $scope.showInfo = function (beans) {
       counter = counter += 1;
       console.log(counter);
       if (counter % 2 !== 0) {
@@ -19,14 +30,5 @@ function ($scope, CoffeeFactory) {
     };
   };
 });
-
-  $scope.methods = ['Aeropress', 'Chemex', 'Cone', 'French Press'];
-
-
-
-
-
-
-
 
 }]);

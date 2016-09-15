@@ -1,20 +1,18 @@
 <h2>Brewing</h2>
-<select ng-model="methods">
-  <option ng-repeat="method in methods" value="">
-    {{method}}
+<select name="brewType" ng-model="brewType" ng-change="drops()">
+  <option value="">
+    Brew Methods
+  </option>
+  <option ng-repeat="brew in brews" value="{{brew.type}}">
+    {{brew.display}}
   </option>
 
 </select>
 <div class="coffee" ng-repeat="bean in beans" ng-model="showStatus">
-  <button type="button" class="btn btn-primary" ng-click="showInfo(bean)">{{bean.name}}</button>
+  <button type="button" class="btn btn-primary" ng-click="showInfo(beans)">{{bean.name}}</button>
 
-  <p ng-show="bean.showStatus">
-    Name: {{bean.name}}<br />
-    Origin: {{bean.origin}}<br />
-    Roast: {{bean.roast}}<br />
-    Tasting Notes: {{bean.flavor}}<br />
-    Body: {{bean.body}}<br />
-    Acidity: {{bean.acidity}}<br />
-    Price: {{bean.price}}<br />
+  <p ng-show="showStatus">
+    name: {{brewType.dose}}
   </p>
+
 </div>
