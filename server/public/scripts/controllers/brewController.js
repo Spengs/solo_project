@@ -20,7 +20,7 @@ function ($scope, CoffeeFactory) {
       console.log($scope.brewType);
     };
 
-    $scope.showInfo = function (beans) {
+    $scope.showInfo = function (bean) {
       counter = counter += 1;
       console.log(counter);
       if (counter % 2 !== 0) {

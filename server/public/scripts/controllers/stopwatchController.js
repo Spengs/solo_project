@@ -11,7 +11,12 @@ myApp.controller('StopwatchController', ['$scope', function ($scope) {
            var mins = parseInt(elapsed / 60000,10);
            elapsed %= 60000;
            var secs = parseInt(elapsed / 1000,10);
-           var ms = elapsed % 1000;
+           var ms = elapsed % 100;
+
+           if (hours < 10) {hours = "0"+hours;}
+           if (mins < 10) {mins = "0"+mins;}
+           if (secs < 10) {secs = "0"+secs;}
+           if (ms < 10) {ms = ms+"0";}
 
            return hours + ':' + mins + ':' + secs + ':' + ms;
        }
