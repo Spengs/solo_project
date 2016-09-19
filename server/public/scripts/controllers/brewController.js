@@ -1,9 +1,21 @@
-myApp.controller('BrewController', ['$scope', 'CoffeeFactory',
-function ($scope, CoffeeFactory) {
+myApp.controller('BrewController', ['$scope', 'CoffeeFactory', '$uibModal',
+function ($scope, CoffeeFactory, $uibModal) {
   console.log('brew controller works');
   $scope.coffeeFactory = CoffeeFactory;
   $scope.coffeeFactory.getResults().then(function () {
     $scope.beans = $scope.coffeeFactory.getBeans();
+    $scope.open = function (beans) {
+      var modalInstance = $uibModal.open({
+        templateUrl: '../views/templates/modalBrewView.html',
+        controller: 'ModalController',
+        resolve: {
+          beans: function () {
+            return beans;
+          }
+        }
+      });
+    };
+
     $scope.brew = {};
     $scope.brewType = '';
     $scope.brews = [
@@ -13,22 +25,11 @@ function ($scope, CoffeeFactory) {
       {type: 'frenchpress', display: 'French Press'},
     ];
 
-    var counter = 0;
-    $scope.showStatus = false;
-
     $scope.drops = function () {
       console.log($scope.brewType);
+      
     };
 
-    $scope.showInfo = function (bean) {
-      counter = counter += 1;
-      console.log(counter);
-      if (counter % 2 !== 0) {
-        $scope.showStatus = true;
-      } else {
-        $scope.showStatus = false;
-    };
-  };
 });
 
 }]);

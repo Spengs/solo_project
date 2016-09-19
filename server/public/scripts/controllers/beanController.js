@@ -6,7 +6,7 @@ function ($scope, CoffeeFactory, $uibModal) {
     $scope.beans = $scope.coffeeFactory.getBeans();
     $scope.open = function (beans) {
       var modalInstance = $uibModal.open({
-        templateUrl: '../views/templates/modalView.html',
+        templateUrl: '../views/templates/modalBeansView.html',
         controller: 'ModalController',
         resolve: {
           beans: function () {

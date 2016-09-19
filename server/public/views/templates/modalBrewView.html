@@ -1,0 +1,32 @@
+<div class="modal-header">
+  <h3>{{beans.name}}</h3>
+</div>
+
+<div class="modal-body">
+  Dose: {{beans.chemex.dose}}<br />
+  Grind: {{beans.chemex.grind}}<br />
+  Bloom Weight: {{beans.chemex.bloomWeight}}<br />
+  Bloom Time: {{beans.chemex.bloomTime}}<br />
+  End Weight: {{beans.chemex.endWeight}}<br />
+  {{brews.type}}
+</div>
+
+<div class="modal-footer" ng-controller="StopwatchController">
+  <div ng-repeat="options in stopwatches">
+      <div bb-stopwatch options="options">
+          <div class="container">
+            <div class="stopWatch numbers">
+              {{options.elapsedTime | stopwatchTime}}
+            </div> <br />
+            <button class="btn btn-success" ng-click="startTimer()">Start</button>
+            <button class="btn btn-danger" ng-click="stopTimer()">Stop</button>
+            <button class="btn btn-primary" ng-click="resetTimer()">Reset</button>
+          </div>
+      </div>
+                <!-- STOPWATCH LOG DISPLAY -->
+      <!-- <div class="log" ng-repeat="log in options.log">
+          {{log/1000}} seconds
+      </div> -->
+  </div>
+  <button class="btn btn-primary" ng-click="closeModal()">OK</button>
+</div>
