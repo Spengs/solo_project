@@ -1,14 +1,43 @@
 <div class="modal-header">
-  <h3>{{beans.name}}</h3>
+  <h2>{{beans.name}}</h2>
 </div>
 
 <div class="modal-body">
-  Dose: {{beans.chemex.dose}}<br />
-  Grind: {{beans.chemex.grind}}<br />
-  Bloom Weight: {{beans.chemex.bloomWeight}}<br />
-  Bloom Time: {{beans.chemex.bloomTime}}<br />
-  End Weight: {{beans.chemex.endWeight}}<br />
-  {{brews.type}}
+  <p>
+  <strong>Aeropress</strong><br />
+  Dose: {{beans.aeropress.dose}}<br />
+  Grind: {{beans.aeropress.grind}}<br />
+  Bloom Weight: {{beans.aeropress.bloomWeight}}<br />
+  Bloom Time: {{beans.aeropress.bloomTime}}<br />
+  End Weight: {{beans.aeropress.endWeight}}<br />
+</p>
+
+<p>
+  <strong>Cone</strong><br />
+  Dose: {{beans.cone.dose}}<br />
+  Grind: {{beans.cone.grind}}<br />
+  Bloom Weight: {{beans.cone.bloomWeight}}<br />
+  Bloom Time: {{beans.cone.bloomTime}}<br />
+  End Weight: {{beans.cone.endWeight}}<br />
+</p>
+
+<p>
+<strong>Chemex</strong><br />
+Dose: {{beans.chemex.dose}}<br />
+Grind: {{beans.chemex.grind}}<br />
+Bloom Weight: {{beans.chemex.bloomWeight}}<br />
+Bloom Time: {{beans.chemex.bloomTime}}<br />
+End Weight: {{beans.chemex.endWeight}}<br />
+</p>
+
+<p>
+<strong>French Press</strong><br />
+Dose: {{beans.frenchpress.dose}}<br />
+Grind: {{beans.frenchpress.grind}}<br />
+Bloom Weight: {{beans.frenchpress.bloomWeight}}<br />
+Bloom Time: {{beans.frenchpress.bloomTime}}<br />
+End Weight: {{beans.frenchpress.endWeight}}<br />
+</p>
 </div>
 
 <div class="modal-footer" ng-controller="StopwatchController">

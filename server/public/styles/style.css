@@ -35,3 +35,9 @@
 	padding: 5px;
 	text-align: left;
 }
+
+p {
+  display: inline-block;
+  padding-left: 7px;
+  padding-right: 7px;
+}
