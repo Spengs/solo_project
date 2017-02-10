@@ -1,13 +1,5 @@
 <h2>Brewing</h2>
-<!-- <select name="brewType" ng-model="brewType" ng-change="drops()">
-  <option value="">
-    Brew Methods
-  </option>
-  <option ng-repeat="brew in brews" value="{{brew.type}}">
-    {{brew.display}}
-  </option>
 
-</select> -->
 <div class="coffee" ng-repeat="bean in beans">
   <button type="button" class="btn btn-primary btn-lg" ng-click="open(bean)">{{bean.name}}</button>
 </div>

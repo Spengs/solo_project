@@ -4,7 +4,7 @@
   "description": "Prime Solo Project",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon server/app.js"
+    "test": "node server/app.js"
   },
   "author": "Joe Otto",
   "license": "ISC",

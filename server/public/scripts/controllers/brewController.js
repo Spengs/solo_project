@@ -19,15 +19,6 @@ function ($scope, CoffeeFactory, $uibModal) {
       });
     };
 
-    // $scope.brew = {};
-    // $scope.brewType = '';
-    // $scope.brews = [
-    //   {type: 'aeropress', display: 'Aeropress'},
-    //   {type: 'chemex', display: 'Chemex'},
-    //   {type: 'cone', display: 'Cone'},
-    //   {type: 'frenchpress', display: 'French Press'},
-    // ];
-
     $scope.drops = function () {
       console.log($scope.brewType);
 
