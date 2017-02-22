@@ -1,9 +1,9 @@
-<div class="row">
+<div class="row" ng-controller="TabController as tab">
     <div class="col-md-6 col-md-offset-3">
         <ul class="nav nav-pills nav-justified">
-          <li><a href="#brew">Brewing</a></li>
-          <li><a href="#beans">Beans</a></li>
-          <li><a href="#addBeans">Add Beans</a></li>
+          <li ng-class="{active: tab.isTabSelected('brew')}"><a href="#brew" ng-click="tab.setTab('brew')">Brewing</a></li>
+          <li ng-class="{active: tab.isTabSelected('beans')}"><a href="#beans" ng-click="tab.setTab('beans')">Beans</a></li>
+          <li ng-class="{active: tab.isTabSelected('addbeans')}"><a href="#addBeans" ng-click="tab.setTab('addbeans')">Add Beans</a></li>
         </ul>
     </div>
 </div>

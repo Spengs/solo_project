@@ -2,8 +2,10 @@
   <h2>{{beans.name}}</h2>
 </div>
 
-<div class="modal-body">
-  <p>
+<div class="modal-body" ng-model="brewMethods">
+  <button class="btn btn-primary" ng-repeat="method in brewMethods">{{brewMethods[$index].display}}</button>
+</div>
+  <!-- <p>
   <strong>Aeropress</strong><br />
   Dose: {{beans.aeropress.dose}}<br />
   Grind: {{beans.aeropress.grind}}<br />
@@ -37,8 +39,8 @@ Grind: {{beans.frenchpress.grind}}<br />
 Bloom Weight: {{beans.frenchpress.bloomWeight}}<br />
 Bloom Time: {{beans.frenchpress.bloomTime}}<br />
 End Weight: {{beans.frenchpress.endWeight}}<br />
-</p>
-</div>
+</p> -->
+<!-- </div> -->
 
 <div class="modal-footer" ng-controller="StopwatchController">
   <div ng-repeat="options in stopwatches">

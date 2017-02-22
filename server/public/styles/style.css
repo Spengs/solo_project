@@ -8,6 +8,8 @@
 	/*box-shadow: 0 10px 10px rgba(0, 0, 0, 0.75);*/
   font-family: "Trebuchet MS";
   text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
 }
 
 .stopWatch {
@@ -35,7 +37,7 @@
 	text-align: left;
 }
 
-p {
+.modal-body p {
   display: inline-block;
   padding-left: 7px;
   padding-right: 7px;

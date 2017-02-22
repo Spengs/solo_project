@@ -1,5 +1,5 @@
 <h2>Brewing</h2>
 
-<div class="coffee" ng-repeat="bean in beans">
-  <button type="button" class="btn btn-primary btn-lg" ng-click="open(bean)">{{bean.name}}</button>
+<div class="coffee" ng-repeat="bean in beans" ng-click="open(bean)">
+  <p>{{bean.name}}</p>
 </div>
