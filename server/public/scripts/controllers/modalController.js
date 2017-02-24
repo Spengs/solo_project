@@ -6,6 +6,12 @@ myApp.controller('ModalController', ['$scope', 'CoffeeFactory', '$uibModal',
   $scope.brews = CoffeeFactory.brews;
   $scope.brew = CoffeeFactory.brew;
   $scope.beans = beans;
+  $scope.brewMethods = [
+    {type: 'aeropress', display: 'Aeropress'},
+    {type: 'chemex', display: 'Chemex'},
+    {type: 'cone', display: 'Cone'},
+    {type: 'frenchpress', display: 'French Press'},
+  ];
   console.log(beans);
   $scope.closeModal = function () {
        $uibModalInstance.dismiss();

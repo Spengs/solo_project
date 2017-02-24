@@ -1,12 +1,6 @@
 myApp.controller('BrewController', ['$scope', 'CoffeeFactory', '$uibModal',
 function ($scope, CoffeeFactory, $uibModal) {
   console.log('brew controller works');
-  $scope.brewMethods = [
-    {type: 'aeropress', display: 'Aeropress'},
-    {type: 'chemex', display: 'Chemex'},
-    {type: 'cone', display: 'Cone'},
-    {type: 'frenchpress', display: 'French Press'},
-  ];
 
   $scope.coffeeFactory = CoffeeFactory;
   $scope.brewType = CoffeeFactory.brewType;
