@@ -3,10 +3,15 @@
 </div>
 
 <div class="modal-body" ng-model="brewMethods">
-  <button class="btn btn-primary" ng-repeat="method in brewMethods">
+  <button class="btn btn-primary" ng-repeat="method in brewMethods" ng-click="showBrewInfo()">
     {{brewMethods[$index].display}}
   </button>
+  <p ng-show="brewStatus">
+    Dose: {{}}
+    {{selectedBrewMethod}}
+  </p>
 </div>
+
   <!-- <p>
   <strong>Aeropress</strong><br />
   Dose: {{beans.aeropress.dose}}<br />
