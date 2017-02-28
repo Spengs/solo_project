@@ -12,6 +12,7 @@ myApp.controller('ModalController', ['$scope', 'CoffeeFactory', '$uibModal',
     {type: 'cone', display: 'Cone'},
     {type: 'frenchpress', display: 'French Press'},
   ];
+  console.log($scope.beans);
   $scope.selectedBrewMethod = '';
   $scope.brewStatus = false;
   $scope.showBrewInfo = function () {
