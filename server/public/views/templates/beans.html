@@ -1,4 +1,9 @@
 <h2>Beans</h2>
-<div class="coffee" ng-repeat="bean in beans" ng-click="open(bean)">
-  <p>{{bean.name}}</p>
+
+<div class="container">
+  <div class="row">
+      <div class="coffee col-md-2" ng-repeat="bean in beans" ng-click="open(bean)">
+        <p>{{bean.name}}</p>
+    </div>
+  </div>
 </div>
