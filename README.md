@@ -1,3 +1,4 @@
 #BARISTA ASSIST APP
 
-Solo project at Prime. 
+Solo project at Prime. Rebuilding.
+
